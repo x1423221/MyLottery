@@ -10,6 +10,7 @@ import TurntableComponent from './components/TurntableComponent.vue';
 import OptionComponent from './components/OptionComponent.vue';
 import { ref }from 'vue'
 
+
 const Awards = ref("");
 
 const processText = (newValue)=>{

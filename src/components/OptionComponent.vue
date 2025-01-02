@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-    import {ref , defineEmits}  from 'vue'
+import {ref , defineEmits}  from 'vue'
     const ClearAll = ()=>{
         const textarea = document.getElementsByTagName("textarea");
         textarea[0].value = "";
