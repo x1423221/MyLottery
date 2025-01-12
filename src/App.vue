@@ -26,4 +26,11 @@ const processText = (newValue)=>{
     height: 100vh;
     gap: 100px;
   }
+
+@media screen and  (max-width: 700px) {
+  .body{
+    display: block;
+    height: 100vh;
+  }
+}
 </style>
