@@ -28,6 +28,7 @@ const processText = (newValue)=>{
 
 const profile = ref(null);
 profile.value = liff.getProfile();
+console.log(profile)
 </script>
 
 <style scoped>
