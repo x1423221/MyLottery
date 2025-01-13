@@ -19,7 +19,7 @@ async function LiffInit() {
 
 LiffInit().then(() => {
     console.log(liff.isLoggedIn())
-    console.log(liff.getProfile().displayname)
+    console.log(liff.getProfile())
     createApp(App).mount('#app');
 });
 
