@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>{{ profile.value.displayName }}</h1>
-    <img :src="profile.value.pictureUrl" width="50" height="50" alt="User Picture" />
-    <p>{{ profile.value.userId }}</p>
+    <h1>{{ profile.displayName }}</h1>
+    <img :src="profile.pictureUrl" width="50" height="50" alt="User Picture" />
+    <p>{{ profile.userId }}</p>
   </div>
   <div class="body">
     <TurntableComponent :AwardsValue="Awards"/>
@@ -32,7 +32,6 @@ onMounted(async ()=>{
   });
 });
 
-console.log(profile.value)
 </script>
 
 <style scoped>
