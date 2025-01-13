@@ -1,8 +1,8 @@
 <template>
-  <div v-if="profile">
-    <h1>{{ profile.displayName }}</h1>
-    <img :src="profile.pictureUrl" width="50" height="50" alt="User Picture" />
-    <p>{{ profile.statusMessage }}</p>
+  <div v-if="profile.value">
+    <h1>{{ profile.value.displayName }}</h1>
+    <img :src="profile.value.pictureUrl" width="50" height="50" alt="User Picture" />
+    <p>{{ profile.value.userId }}</p>
   </div>
   <div v-else>
     <p>Loading profile...</p>
@@ -28,7 +28,7 @@ const processText = (newValue)=>{
 
 const profile = ref(null);
 profile.value = liff.getProfile();
-console.log(profile)
+console.log(profile.value)
 </script>
 
 <style scoped>
