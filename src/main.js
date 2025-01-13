@@ -10,7 +10,7 @@ async function LiffInit() {
     }).then(() => {
         if (!liff.isLoggedIn()) {
             console.log("123")
-            liff.login({ redirectUri: "https://ffb0-122-117-106-162.ngrok-free.app/" });
+            liff.login({ redirectUri: "https://x1423221.github.io/MyLottery/" });
         }
     }).catch((err) => {
         console.log(err.code, err.message);
