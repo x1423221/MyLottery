@@ -11,6 +11,7 @@
     <TurntableComponent :AwardsValue="Awards"/>
     <OptionComponent :AwardsValue="Awards" @processText="processText"></OptionComponent>
   </div>
+  
 </template>
 
 <script setup>
