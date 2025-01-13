@@ -17,8 +17,8 @@
 <script setup>
 import TurntableComponent from './components/TurntableComponent.vue';
 import OptionComponent from './components/OptionComponent.vue';
+import { ref}from 'vue'
 import liff from '@line/liff';
-import { ref , onMounted}from 'vue'
 
 const Awards = ref("");
 
@@ -27,27 +27,8 @@ const processText = (newValue)=>{
 }
 
 const profile = ref(null);
+profile.value = liff.getProfile();
 
-const initializeLiff = async () => {
-  try {
-    await liff.init({
-      liffId: '2004590558-G8g0jKw4', // 替換成你的 LIFF ID
-    });
-
-    if (!liff.isLoggedIn()) {
-      liff.login();
-    }
-
-    const userProfile = await liff.getProfile();
-    profile.value = userProfile;
-  } catch (error) {
-    console.error('Error initializing LIFF:', error);
-  }
-  };
-
-  onMounted(() => {
-  initializeLiff();
-});
 </script>
 
 <style scoped>
