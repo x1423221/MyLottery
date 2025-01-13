@@ -1,11 +1,8 @@
 <template>
-  <div v-if="profile">
+  <div >
     <h1>{{ profile.value.displayName }}</h1>
     <img :src="profile.value.pictureUrl" width="50" height="50" alt="User Picture" />
     <p>{{ profile.value.userId }}</p>
-  </div>
-  <div v-else>
-    <p>Loading profile...</p>
   </div>
   <div class="body">
     <TurntableComponent :AwardsValue="Awards"/>
