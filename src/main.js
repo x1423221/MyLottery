@@ -13,6 +13,7 @@ async function LiffInit() {
             liff.login({ redirectUri: "https://x1423221.github.io/MyLottery/" });
         }
     }).catch((err) => {
+
         console.log(err.code, err.message);
     });
 }
